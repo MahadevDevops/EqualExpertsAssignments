@@ -67,7 +67,7 @@ Resources:
       VpcId: !Ref VPC
       InternetGatewayId: !Ref InternetGateway
 
-  # Now some subnets, 2 public and 2 private:
+  # Now some subnets, 1 public and 1 private:
   PublicSubnetA:
     Type: AWS::EC2::Subnet
     Properties:
@@ -191,7 +191,7 @@ Resources:
         ToPort: 8080
       
 
-    # Create private Instance
+  # Create private Instance
   
   EC2Private:
     Type: AWS::EC2::Instance
